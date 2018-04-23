@@ -1,4 +1,4 @@
-<!--display blog in macros-->
+<!--displaying blog in macros-->
 {% macro displayBlog(blog_list) %} {% for blog in blog_list %}
 <h3><a href="/blog/{{blog.id}}">{{blog.title}}</a></h3>
 <p>Posted on: {{blog.timestamp}}</p>
