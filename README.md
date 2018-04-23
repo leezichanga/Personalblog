@@ -4,6 +4,9 @@ Developer: Elizabeth Ichanga
 
 Project name: Personal Blog
 
+## Description
+This is an app that allows users to view,submit & comment on blogs.
+
 ## Requirement
 Browser
 Network connection
