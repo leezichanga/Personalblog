@@ -3,7 +3,7 @@ from . import main
 from flask_login import login_required,current_user
 from ..models import User,Blog,Comment,Subscribe
 from .forms import UpdateProfile,BlogForm,CommentForm,SubscribeForm
-from .. import db,photos
+from .. import db,images
 from ..email import mail_message
 
 @main.route('/')
