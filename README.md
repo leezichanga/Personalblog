@@ -1,6 +1,6 @@
 # PERSONAL BLOG
 
-Developer: Elizabeth Ichanga
+Developer: Elizabeth Ichang'a
 
 Project name: Personal Blog
 
@@ -27,5 +27,5 @@ No link to deploy to heroku since project is still in development.
 
 
 ## Licence
-MIT (c) 2018 Elizabeth Ichanga
+MIT (c) 2018 Elizabeth Ichang'a
 
