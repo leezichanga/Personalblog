@@ -7,19 +7,20 @@ from flask_uploads import UploadSet, configure_uploads,IMAGES
 from flask_mail import Mail
 
 
-login_manager = LoginManager()
-login_manager.session_protection = 'strong'
-login_manager.login_view = 'auth.login'
-
-images = UploadSet('images',IMAGES)
-
 bootstrap = Bootstrap()
 db = SQLAlchemy()
 mail = Mail()
 
+images = UploadSet('images',IMAGES)
+
+login_manager = LoginManager()
+login_manager.session_protection = 'strong'
+login_manager.login_view = 'auth.login'
+
+
 def create_app(config_name):
     app = Flask(__name__)
-    #creating app configurations
+    #creating  the app configurations
     app.config.from_object(config_options[config_name])
 
     #initializing flask extensions
@@ -38,6 +39,6 @@ def create_app(config_name):
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint,url_prefix='/authenticate')
 
-    #will add views and forms
+
 
     return app
