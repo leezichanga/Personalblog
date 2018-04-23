@@ -9,6 +9,7 @@ This is an app that allows users to view,submit & comment on blogs.
 
 ## Requirement
 Browser
+
 Network connection
 
 ## Technologies used
@@ -27,5 +28,7 @@ No link to deploy to heroku since project is still in development.
 
 
 ## Licence
-MIT (c) 2018 Elizabeth Ichang'a
+MIT Licence 2018
+
+Copyright (c) Elizabeth Ichang'a
 
