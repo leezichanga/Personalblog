@@ -1,0 +1,7 @@
+{% extends 'bootstrap/base.html'%}
+
+<head>
+  {{moment.include_jquery()}} {{moment.include_moment()}}
+</head>
+{% block styles %} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %} {% include 'navbar.html' %}

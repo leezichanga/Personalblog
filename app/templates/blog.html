@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% import 'macros.html' as macro %} {% block content %}
+<div class="container">
+  <h1>
+        {{blog.title | upper}}
+    </h1>
+  <br><br>
+  <p>Author: <i>{{blog.user.username}}</i></p>
+  <p>{{blog.body}}</p>
+  <div class="row">
+    <div class="col-md-3">
+      <p><a href="/comment/new/{{blog.id}}" class="btn btn-info">Write Comment</a></p>
+    </div>
+    <div class="col-md-9">
+      <button data-toggle="collapse" data-target="#comment" class="btn btn-info">View Comments</button>
+      <div id="comment" class="collapse">
+        {{ macro.displayComments(comments) }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

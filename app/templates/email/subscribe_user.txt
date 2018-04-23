@@ -1,0 +1,3 @@
+Hello {{subscriber.name}}
+Welcome to my blog,
+Enjoy the posts on the blog.

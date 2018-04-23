@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% import 'macros.html' as macro %} {% block content %}
+<div class="container">
+  <div class="row">
+    <img src="./static/images/nature.jpeg" class="cover" style="width:100%" />
+  </div>
+
+  <div class="row col-sm-9 col-xs-9 col-md-8 col-lg-8">
+    <h2>Nature</h2>
+    <p></p>
+  </div>
+  <div class="row col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
+  <div class="row col-sm-2 col-xs-2 col-md-3 col-lg-3" style="border-left: 3px black">
+    <div class="button btn btn-info">
+      <a href="/subscribe">Subscribe Here</a>
+    </div>
+    <h2>View Blogs</h2> {{macro.displayBlog}}
+  </div>
+</div>
+
+<div class="col-md-2 col-lg-2"></div>
+</div>
+</div>
+{% endblock %}
