@@ -11,7 +11,7 @@ def index():
     '''
         View root page function that returns the index page and its data
     '''
-    poems = Blog.query.all()
+    nature = Blog.query.all()
     comments = Comment.query.all()
     title = 'My Blog | My Blog'
 
